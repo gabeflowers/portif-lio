@@ -1,0 +1,51 @@
+@use '../mixins'
+@use '../variables'
+
+
+.projects-container
+    margin-bottom: 1rem
+
+    .project-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+        box-shadow: 10px 10px 10px #000000
+        
+        
+    .project-card
+        @include mixins.center
+        display: inline
+        gap: 1rem
+        padding: 1rem
+        width: 40%
+        margin: 10px 0px 30px 90px
+        
+        
+        
+
+    img
+        width: 400px
+        height: 200px
+
+    
+        
+
+    h3
+        color: variables.$text-color
+        margin-bottom: 1rem
+        margin-top: 1rem
+
+    #description
+        width: 70%
+        z-index: 1
+        top: 0
+        left: -100rem
+        padding-left: 0%
+        flex-direction: column
+
+    #stack
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        margin-bottom: 1.5rem
+    
